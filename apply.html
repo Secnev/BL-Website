@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+        <!-- Additional CSS must be placed after Bootstrap CSS -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&family=Raleway:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css" />
+        <!-- Additional CSS must be placed after Bootstrap CSS -->
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    
+        <title>BL</title>
+    </head>
+    <body>
+      <!-- Header-->
+       <header>
+         <!--Navbar-->
+        <nav id="navbar1" class="navbar navbar-expand-sm navbar-light sticky-top">
+          <div class="container">
+            <!--Logo-->
+            <a class="navbar-brand" href="ind" id="logo-anchor" ><img src="BL_Images/Burrito_Logo.png" height="60" width="auto" alt="Logo" id="BL_logo" /></a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#BLNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="BLNav">
+              <!--Navbar items-->
+              <ul class="navbar-nav" id="Nav_items">
+                  <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                  <li class="nav-item"><a class="nav-link" href="contactUs.html">Contact</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Apply</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+    <!-- Main Div-->
+    <div class="container">
+      <!--APPLY FORM-->
+      <div id="apply-form" class="row">
+        <div class="col-12 text-center">
+          <h4>APPLY</h4>
+        </div>
+        <div class="col">
+          <!--FORM-->
+          <form class="form">
+            
+            <!--FULL NAME GROUP-->
+            <div class="form-group">
+              
+              <div class="form-row">
+                <div class="col-12">
+                  <label for="firstName"><h4>Full Name</h4></label>
+                </div>
+                <div id="form-input" class="col-8 col-sm-4 col-md-3">
+                  <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                </div>
+                <div id="form-input" class ="col-8 col-sm-4 col-md-3">
+                  <input type="text" class="form-control" id="middleName" placeholder="Middle Name">
+                </div>
+                <div id="form-input" class ="col-8 col-sm-4 col-md-3">
+                  <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                </div>
+              </div>
+            </div>
+     
+              <!--CURRENT ADDRESS GROUP-->
+              <div class="form-group">
+                <div class="form-row">
+                  <div class="col-12">
+                    <label for="streetAddress"><h4>Current Address</h4></label>
+                  </div>
+                  <div id="form-input" class="col-9">
+                    <input type="text" class="form-control" id="streetAddress" placeholder="Street Address">
+                  </div>
+                  <div id="form-input" class ="col-9">
+                    <input type="text" class="form-control" id="streetAddress2" placeholder="Street Address Line 2">
+                  </div>
+                 
+                </div>
+
+                <div class="form-row">
+                  <div id="form-input" class ="col-4">
+                    <input type="text" class="form-control" id="city" placeholder="City">
+                  </div>
+                  <div id="form-input" class ="col-3">
+                    <input type="text" class="form-control" id="state" placeholder="State">
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class ="col-3">
+                    <input type="number" class="form-control" id="zipcode" placeholder="Zip Code">
+                  </div>
+                </div>
+              </div>
+                     <!--EMAIL & PHONE GROUP-->
+            <div class="form-group">
+              
+
+              <div class="form-row">
+                <div id="form-input"  class="col-8 col-md-4">
+                  <label for="email"><h4>Email Address</h4></label>
+                  <input type="email" class="form-control" id="email" placeholder="Email Address">
+                </div>
+              
+                <div id="form-input" class="col-8 col-md-4">
+                  <label for="telephone"><h4>Phone Number</h4></label>
+                  <input type="tel" class="form-control" id="telephone" placeholder="Phone Number">
+                </div>
+              </div>
+            </div>
+      
+            <!--BIRTHDATE GROUP-->  
+            <div class="form-group">
+              
+              <div class="form-row">
+                <div class="col-12">
+                  <label for="birthdate"><h4>Date of Birth</h4></label>
+                </div>
+                <div class="col-6">
+                  <input type="date" class="form-control" id="birthdate" name="birthdate"
+                        
+                        min="1920-01-01" max="2005-12-31">
+                </div>
+              </div>
+            </div>
+            <!--EMPLOYMENT GROUP-->
+            <div class="form-group">
+
+              <div class="form-row">
+                <div class="col-12">
+                  <label for="previousEmployer"><h4>Employment History</h4> </label>
+                </div>
+              </div>
+              <div class="form-row">
+                <div id="form-input"  class="col-12 col-sm-4">
+                  <input type="text" class="form-control" id="companyName" placeholder="Company Name">
+                </div>
+                <div id="form-input" class="col-12 col-sm-4">
+                  <input type="text" class="form-control" id="position" placeholder="Position">
+                </div>
+                
+              </div>
+
+              <div class="form-row">
+                <div id="form-input" class="col-12 col-sm-8">
+                  <input type="text" class="form-control" id="jobDescription" placeholder="Brief Job Description">
+                </div>
+              </div>
+        
+              <div class="form-row">
+                <div id="form-input" class="col-12 col-sm-8">
+                  <input type="text" class="form-control" id="reasonForLeaving" placeholder="Reason for Leaving">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="col-12 col-sm-4">
+                  <select class="form-control">
+                    <option>Working Period...</option>
+                    <option>Less than a year</option>
+                    <option>One to two years</option>
+                    <option>More than two years</option>
+                    
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+            </div>
+          <!--POSITION GROUP-->  
+          <div class="form-group">
+
+            <div class="form-row">
+              <div class="col-12">
+                <label for="positionTitle"><h4>Position</h4></label>
+              </div>
+            </div>
+            <div class="form-row">
+              <div id="form-input" class="col-12 col-sm-8">
+                <select class="form-control">
+                  <option>Desired Position</option>
+                  <option>Dishwasher</option>
+                  <option>Waiter</option>
+                  <option>Cook</option>
+                  
+                </select>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="col-12">
+                <label for="availability">Available Days</label>
+              </div>
+              <div id="form-input" class="col-12 d-none d-sm-block">
+                  <input type="checkbox" name="days" id="monday" value="monday">
+                  <label for="monday"> Mon </label>
+                  <input type="checkbox" name="days" id="tuesday" value="tuesday">
+                  <label for="tuesday"> Tues</label>
+                  <input type="checkbox" name="days" id="wednesday" value="wednesday">
+                  <label for="wednesday"> Wed</label>
+                  <input type="checkbox" name="days" id="thursday" value="thursday">
+                  <label for="thursday"> Thurs</label>
+                  <input type="checkbox" name="days" id="friday" value="friday">
+                  <label for="friday"> Fri</label>
+                  <input type="checkbox" name="days" id="saturday" value="saturday">
+                  <label for="saturday"> Sat</label>
+                  <input type="checkbox" name="days" id="sunday" value="sunday">
+                  <label for="sunday"> Sun</label>
+              </div>
+
+              <div id="form-input" class="col-12 d-block d-sm-none">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-danger">
+                    <input type="checkbox" name="daysAvailable" id="mon" autocomplete="off"> Mon
+                  </label>
+                  <label class="btn btn-danger">
+                    <input type="checkbox" name="daysAvailable" id="tues" autocomplete="off"> Tues
+                  </label>
+                  <label class="btn btn-danger">
+                    <input type="checkbox" name="daysAvailable" id="wed" autocomplete="off"> Wed
+                  </label>
+                  <label class="btn btn-danger">
+                    <input type="checkbox" name="daysAvailable" id="thurs" autocomplete="off"> Thurs
+                  </label>
+              
+                  <label class="btn btn-danger">
+                    <input type="checkbox" name="daysAvailable" id="fri" autocomplete="off"> Fri
+                  </label>
+                  <label class="btn btn-danger">
+                    <input type="checkbox" name="daysAvailable" id="sat" autocomplete="off"> Sat
+                  </label>
+                  <label class="btn btn-danger">
+                    <input type="checkbox" name="daysAvailable" id="Sun" autocomplete="off"> Sun
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div id="form-input" class="col-12 col-sm-4">
+                <select class="form-control">
+                  <option>When are You Available?</option>
+                  <option>Mornings</option>
+                  <option>Afternnons</option>
+                  <option>Anytime</option>
+                  
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div id="form-input" class="col-12 col-sm-4">
+                <input type="number" class="form-control" id="hoursAvailable" placeholder="How Many Hours Can You Work?">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="col-12 col-sm-4">
+                <label for="availability">Availble to Start</label>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-6 col-sm-3">
+                <input type="date" class="form-control" id="availability" name="availability"
+                      
+                      min="2020-01-01" max="2050-12-31">
+              </div>
+            </div>
+            
+        
+            
+            
+           
+          
+          </div>
+              <!--SUBMIT BUTTON-->
+            <button type="submit" id="form-button"  class="btn btn-danger">Submit</button>
+      </form>
+        </div>
+      </div>
+    </div>
+
+        
+   <!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center">
+
+    <!-- Grid row -->
+    <div class="row">
+        <!--HOURS COLUMNS-->
+        <div class="col-6 col-md-4">
+            <div class="row">
+                <div class="col-12">
+                    HOURS
+                </div>
+                <div id="footer-links" class="col-12">
+                    Sunday-Thursday: 9AM-10PM
+                </div>
+                <div id="footer-links" class="col">
+                    Friday-Saturday: 9AM-11PM
+                </div>
+            </div>
+        </div>
+        <!--ADDRESS COLUMNS-->
+        <div class="col-6 col-md-4">
+            <div class="row">
+                <div class="col">
+                    ADDRESS
+                </div>
+            </div>
+            <div class="row">
+                <div id="footer-links" class="col">
+                    3263 S Church St Burlington, NC 27215
+                </div>
+            </div>
+        </div>
+         <!--PHONE NUMBER COLUMNS-->
+         <div class="col-6 col-md-4">
+            <div class="row">
+                <div class="col">
+                    PHONE NUMBER
+                </div>
+            </div>
+            <div class="row">
+                <div id="footer-links" class="col">
+                    <a type="tel" href="tel:3363509173">(336)350-9173</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+      <!-- Grid column -->
+        <div class="col-6 col-md-4">
+
+            <!-- Links -->
+            SITE
+
+            <ul id="footer-links" class="list-unstyled">
+            <li>
+                <a id="footer-links" href="menu.html">Menu</a>
+            </li>
+            <li>
+                <a id="footer-links" href="#!">Contact Us</a>
+            </li>
+            <li>
+                <a id="footer-links" href="apply.html">Apply</a>
+            </li>
+            </ul>
+        </div>
+
+    
+      <!-- Grid column -->
+        <div class="col-6 col-md-4">
+
+            <!-- Links -->
+            SOCIAL
+
+            <ul  class="list-unstyled">
+            <li>
+                <a id="footer-links" href="#!">FaceBook</a>
+            </li>
+            <li>
+                <a id="footer-links" href="#!">Instagram</a>
+            </li>
+            </ul>
+
+        </div>
+        <!-- Grid column -->
+
+        
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a id="footer-links" href="https://davidvences.com/"> DavidVences.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+        <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script>$('.datepicker').datepicker();</script> 
+      
+    </body>
+
+</html>
