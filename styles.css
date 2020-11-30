@@ -1,3 +1,7 @@
+select {
+    -webkit-appearance: none;
+}
+
 * {
     font-family: 'Quicksand', sans-serif;
 }
@@ -142,7 +146,7 @@ button{
       margin-top: 100px;
   }
   .tab-content h4 {
-      color: teal;
+      color: black;
   }
 
   .select-custom {
@@ -184,12 +188,25 @@ p {
 #menu-pills-tab{
     margin-top: 0;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    
+}
+a:hover{
+    color: #F5B038;
 }
 a {
     color:inherit
 }
 #footer-titles{
     color:#F5B038;
+}
+h2 {
+    color:teal;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
  

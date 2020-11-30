@@ -26,7 +26,7 @@
         <nav id="navbar1" class="navbar navbar-expand-sm navbar-light sticky-top">
           <div class="container">
             <!--Logo-->
-            <a class="navbar-brand" href="ind" id="logo-anchor" ><img src="BL_Images/Burrito_Logo.png" height="60" width="auto" alt="Logo" id="BL_logo" /></a>
+            <a class="navbar-brand" href="index.html" id="logo-anchor" ><img src="BL_Images/Burrito_Logo.png" height="60" width="auto" alt="Logo" id="BL_logo" /></a>
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#BLNav">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -53,30 +53,34 @@
             
             <div id="tab-div" class="row">
                 <div id="custom-s" class="col-12">
-                    <label for="Select"><h4> MENU </h4></label>
+                    <label for="Select"><h4> MENU</h4></label>
                 </div>
                 <!-- SMALL SCREEN MENU DROPDOWN-->
                 <div class="col-12 d-blocl d-md-none">
                     <!--dropdown items-->
                     <div class="select-custom">
                         <select id='Select'>
+                            <option selected disabled>Choose a Category</i></option>
                             <option value='0'>Appetizers</option>
                             <option value='1'>Seafood</option>
                             <option value='2'>Breakfast</option>
                             <option value='3'>Lunch</option>
-                            <option value='4'>Burritos</option>
-                            <option value='5'>Fajitas</option>
-                            <option value='6'>Soups</option>
-                            <option value='7'>Dinner</option>
-                            <option value='8'>Extras</option>
-                            <option value='9'>Drinks</option>
-                            <option value='10'>Kids Meals</option>
+                            <option value='4'>Quesadillas</option>
+                            <option value='5'>Burritos</option>
+                            <option value='6'>Fajitas</option>
+                            <option value='7'>Soups</option>
+                            <option value='8'>Salads</option>
+                            <option value='9'>Dinner</option>
+                            <option value='10'>Vegetarian</option>
+                            <option value='11'>Extras</option>
+                            <option value='12'>Drinks</option>
+                            <option value='13'>Kids Meals</option>
                         </select>
                     </div>
                 </div>
                 
             <div class="col-3 d-none d-md-block">
-                  <!--standard tab nav-->
+                  <!--SIDE MENU CATEGORIES-->
                 
                     
                     <div class="nav flex-column nav-pills" id="menu-pills-tab" role="tablist" aria-orientation="vertical">
@@ -85,10 +89,13 @@
                         <a id="tab-pills" class="nav-link " href="#seafood" role="tab" data-toggle="pill">Seafood</a>
                         <a id="tab-pills" class="nav-link " href="#breakfast" role="tab" data-toggle="pill">Breakfast</a>
                         <a id="tab-pills" class="nav-link " href="#lunch" role="tab" data-toggle="pill">Lunch</a>
+                        <a id="tab-pills" class="nav-link " href="#quesadillas" role="tab" data-toggle="pill">Quesadillas</a>
                         <a id="tab-pills" class="nav-link " href="#burritos" role="tab" data-toggle="pill">Burritos</a>
                         <a id="tab-pills" class="nav-link " href="#fajitas" role="tab" data-toggle="pill">Fajitas</a>
                         <a id="tab-pills" class="nav-link " href="#soups" role="tab" data-toggle="pill">Soups</a>
+                        <a id="tab-pills" class="nav-link " href="#salads" role="tab" data-toggle="pill">Salads</a>
                         <a id="tab-pills" class="nav-link " href="#dinner" role="tab" data-toggle="pill">Dinner</a>
+                        <a id="tab-pills" class="nav-link " href="#vegetarian" role="tab" data-toggle="pill">Vegetarian</a>
                         <a id="tab-pills" class="nav-link " href="#kids" role="tab" data-toggle="pill">Kids Meals</a>
                         <a id="tab-pills" class="nav-link " href="#extras" role="tab" data-toggle="pill">Extras</a>
                         <a id="tab-pills" class="nav-link " href="#drinks" role="tab" data-toggle="pill">Drinks</a>
@@ -236,8 +243,74 @@
                                 rice, beans, lettuce, tomato, sour cream
                                 and guacamole, corn or flour tortillas.</p>
                         </div>
+                        <!--QUESADILLAS-->
+                        <div role="tabpanel" class="tab-pane" id="quesadillas">
+                            <h2>Quesadillas</h2>
+                            <p>All quesadillas are served with lettuce, tomatoes, guacamole, and sour cream. Add rice and beans for $1.50 extra.</p>
+                            <h4>Camaron</h4>
+                            <p>Shrimp</p>
+
+                            <h4>Lengua</h4>
+                            <p>Beef tongue</p>
+
+                            <h4>Queso</h4>
+                            <p>Only cheese</p>
+                      
+                            <h4>Pollo</h4>
+                            <p>Chicken</p>
+                      
+                            <h4>Carne Molida</h4>
+                            <p>Ground Beef</p>
+
+                            <h4>Bistec</h4>
+                            <p>Steak</p>
+                      
+                            <h4>Pastor</h4>
+                      
+                            <h4>Jamon</h4>
+                            <p>Ham</p>
+                      
+                            <h4>Chorizo</h4>
+                            <p>Mexican sausage</p>
+                                                  
+                        </div>
                         <!--BURRITOS-->
                         <div role="tabpanel" class="tab-pane" id="burritos">
+                            <h2>Burrito Dinner</h2>
+                            <p>
+                                All burritos served with refried beans,
+                                rice, lettuce, tomatoes and sour cream.
+                            </p>
+
+                            <h4>Burrito Dinner</h4>
+                            <p> No sauce or melted cheese on top.</p>
+
+                            <h4>Burrito Dinner Suizo</h4>
+                            <p>Filled with beans, cheesem lettucem tomato and your choice of chicken, ground beef, steak, pork, or Mexican sausage. Covered in ranchero sauce and melted cheese.</p>
+
+                            <h4>Burrito Texano Suizo</h4>
+                            <p>Filled with grilled chicken, steak, shrimp, bell peppers, onions, beans, and cheese. Covered with ranchero sauce and melted cheese.</p>
+
+                            <h4>Fajiburrito Steak Suizo</h4>
+                            <p> Filled with grilled chicken, bell peppers, onions,
+                                beans, cheese. Covered with ranchero sauce
+                                and melted cheese.</p>
+
+                                <h4>Fajiburrito Chicken Suizo </h4>
+                                <p>Filled with grilled chicken, bell peppers, onions,
+                                beans, cheese. Covered with ranchero sauce
+                                and melted cheese.</p>
+                                <h4>Fajiburrito Shrimp </h4>
+                                <p>Filled with grilled shrimp, bell peppers, onions,
+                                    beans, cheese. Covered with ranchero sauce
+                                    and melted cheese.</p>
+                                    <h2>Burrito Loco</h2>
+                                <h4>Burrito Gigante Loco</h4>
+                                <p> Filled with beans, cheese, lettuce, tomato, sour
+                                    cream, guacamole, rice, onion, cilantro,
+                                    marinated pork, steak and chicken.</p>
+                                <p style="color:#E9452C">Make it suizo style for $2.00 extra</p>
+                                <p style="color:#E9452C">Substitute pork and chicken for extra steak; $2.00 extra</p>
 
                         </div>
                         <!--FAJITAS-->
@@ -306,9 +379,94 @@
                             <h4>Pozole</h4>
                             <p>Pork and hominy soup.</p>
                         </div>
+                        <!--SALADS-->
+                        <div role="tabpanel" class="tab-pane" id="salads">
+                            <h2>Salads</h2>
+                            <h4>Fajita Taco Salad</h4>
+                            <p>With chicken breast or steak, bell peppers
+                                & grilled onions, tomato, beans, cheese,
+                                guacamole and sour cream on a bed of lettuce.</p>
+
+                            <h4>Ground Beef Taco Salad</h4>
+                            <p>With ground beef or shredded chicken,
+                                tomato, beans, cheese, guacamole and
+                                sour cream on a bed of lettuce.</p>
+
+                            <h4>Chicken Taco Salad</h4>
+                            <p> With chicken breast. Served with tomato,
+                                beans, cheese, guacamole and sour cream
+                                on a bed of lettuce.</p>
+
+                            <h4>Daisy's Salad</h4>
+                            <p> With chicken breast. Served with tomato,
+                                lettuce, avocado, onions, bell peppers
+                                and cucumber.</p>
+                        </div>
+               
                         <!--DINNER-->
                         <div role="tabpanel" class="tab-pane" id="dinner">
-                            <h2></h2>
+                            <h2>Our Favorite Dinner Specials</h2>
+                            <p>All dinner specials served with beans, rice, lettuce, tomato, sour cream, guacamole, and corn or flour toritllas.</p>
+
+                            <h4> Tampiqueña</h4>
+                            <p> Skirt steak. Served with one cheese enchilada.</p>
+
+                            <h4>Bistec a la Mexicana</h4>
+                            <p>Strips of skirt steak sautéed with tomato,
+                                onion, jalapeño and green peppers.</p>
+                            <h4>Milanesa de Res</h4>
+                            <p>Breaded steak</p>
+                            <h4>Milanesa de Pollo</h4>
+                            <p>Breaded chicken.</p>
+                            <h4>Carne Asada</h4>
+                            <p>Skirt steak. A favorite mexican dish.</p>
+                            <h4>Pechuga de Pollo</h4>
+                            <p>Grilled chicken. </p>
+                            <h4>Choripollo</h4>
+                            <p>Grilled chicken with Mexican sausage
+                                topped with melted cheese.</p>
+                            <h4>Cecina Dinner</h4>
+                            <p>Thin cut steak with grilled onions and jalapeños.</p>
+                            <h4>Mar y Tierra</h4>
+                            <p>Ribeye steak with 5 jumbo shrimp.</p>
+                            <h4>Carnitas Dinner</h4>
+                            <p>Chunks of fried pork with pico de gallo,
+                                rice, beans and tortillas.</p>
+                            <h4>Bistec Ranchero</h4>
+                            <p> Ribeye steak tossed ranchero sauce.</p>
+                            <h4>Bistec Encebollado</h4>
+                            <p>Ribeye steak with grilled onions.</p>
+                            <h2>Enchiladas Dinner</h2>
+                            <p>All enchiladas are served with beans, rice, lettuce, tomatoes, and sour cream.</p>
+                            <h4>Enchiladas Suizas</h4>
+                            <p> 3 corn tortilla dipped in ranchero sauce,
+                                rolled and filled with your choice or chicken,
+                                ground beef or cheese, covered with melted
+                                cheese.</p>
+                            <h4>Enchiladas Verdes</h4>
+                            <p> 3 corn tortillas dipped in green sauce.</p>
+                        </div>
+                        <!--VEGETARIAN-->
+                        <div role="tabpanel" class="tab-pane" id="vegetarian">
+                            <h2>Vegetarian</h2>
+                            <p>Dinner plates are served with rice and beans.</p>
+                            <h4> Carlos' Especial Burrito Dinner</h4>
+                            <p> Include chile relleno, beans, tomato, rice,
+                                lettuce and cheese.</p>
+                            <h4>Burrito Vegetariano Dinner</h4>
+                            <p> Include grilled onions and bell peppers,
+                                rice beans, tomato, lettuce and cheese.</p>
+
+                            <h4>Cheese Quesadilla Dinner</h4>
+                            <p> Three small cheese quesadillas served with rice,
+                                beans, cheese, lettuce, tomato, sour cream
+                                and guacamole.</p>
+
+                            <h4>Avocado Tostada Dinner</h4>
+                            <p> Two Avocado tostadas, includes beans,
+                                cheese, tomato, lettuce and sour cream.
+                                Dinner Plates are served with rice and bean</p>
+                                     
                         </div>
                         <!--EXTRAS-->
                         <div role="tabpanel" class="tab-pane" id="extras">
@@ -452,10 +610,10 @@
 
             <ul  class="list-unstyled">
             <li>
-                <a  href="#!">FaceBook</a>
+                <a  href="https://www.facebook.com/pages/category/Tex-Mex-Restaurant/El-Burrito-Loco-139292506219090/" target="_blank">FaceBook</a>
             </li>
             <li>
-                <a href="#!">Instagram</a>
+                <a href="https://www.instagram.com/ncburritoloco/" target="_blank">Instagram</a>
             </li>
             </ul>
 
