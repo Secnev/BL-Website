@@ -44,9 +44,12 @@ overflow: hidden;
 }
 #order-button {
     margin-top: 10px;
-    width: 135px;
+    width: 55px;
     background-color: #E9452C;
     border: none;
+    border-radius: 10px;
+    padding: 15px;
+    color:white;
     
     
 }
@@ -208,5 +211,6 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
+
 
  

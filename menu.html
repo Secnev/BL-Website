@@ -43,10 +43,7 @@
         </nav>
       </header>
 
-    <!-- Main Row-->
-
-
-        
+    <!-- Main Row-->        
 
         <div class="row">
             <div class="container">
@@ -55,12 +52,13 @@
                 <div id="custom-s" class="col-12">
                     <label for="Select"><h4> MENU</h4></label>
                 </div>
+              
                 <!-- SMALL SCREEN MENU DROPDOWN-->
                 <div class="col-12 d-blocl d-md-none">
                     <!--dropdown items-->
                     <div class="select-custom">
                         <select id='Select'>
-                            <option selected disabled>Choose a Category</i></option>
+                            <option selected disabled>Choose a Category <p id="caret">&#9660;</p></i></option>
                             <option value='0'>Appetizers</option>
                             <option value='1'>Seafood</option>
                             <option value='2'>Breakfast</option>
@@ -82,7 +80,7 @@
             <div class="col-3 d-none d-md-block">
                   <!--SIDE MENU CATEGORIES-->
                 
-                    
+                
                     <div class="nav flex-column nav-pills" id="menu-pills-tab" role="tablist" aria-orientation="vertical">
                         <h4>CATEGORIES</h4>
                         <a id="tab-pills" class="nav-link active" href="#appetizers" role="tab" data-toggle="pill">Appetizers</a>
